@@ -1,3 +1,13 @@
+# macOS files
+**/.DS_Store
+
+# Qase files
+qase.config.json
+
+# Cypress
+node_modules
+test-results
+
 # Logs
 logs
 *.log

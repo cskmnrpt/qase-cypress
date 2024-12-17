@@ -3,8 +3,9 @@
   "version": "2.2.5",
   "description": "A demo repository with Examples, for troubleshooting problems and for feature requests.",
   "main": "cypress.config.js",
+  "type": "module",
   "directories": {
-    "test": "tests"
+    "test": "cypress/e2e/tests"
   },
   "scripts": {
     "test": "QASE_MODE=testops npx cypress run --spec cypress/e2e/tests/examples"

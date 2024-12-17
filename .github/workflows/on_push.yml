@@ -3,7 +3,7 @@ name: Example tests
 on:
   push:
     branches:
-      - examples  # Trigger on pushes to the 'main' branch. Change this to your default branch if different.
+      - main  # Trigger on pushes to the 'main' branch.
 
   pull_request:
     branches:

@@ -1,13 +1,13 @@
-import { defineConfig } from 'cypress';
-import qasePlugin from 'cypress-qase-reporter/plugin';
-import qaseMetadata from 'cypress-qase-reporter/metadata';
+import { defineConfig } from "cypress";
+import qasePlugin from "cypress-qase-reporter/plugin";
+import qaseMetadata from "cypress-qase-reporter/metadata";
 
 export default defineConfig({
-    reporter: 'cypress-multi-reporters',
-    reporterOptions: {
-        reporterEnabled: 'cypress-qase-reporter',
-        cypressQaseReporterReporterOptions: {
-            /*
+  reporter: "cypress-multi-reporters",
+  reporterOptions: {
+    reporterEnabled: "cypress-qase-reporter",
+    cypressQaseReporterReporterOptions: {
+      /*
             // You can define the reporter options here, or in a separate `qase.config.json` file.
 
             mode: 'testops',
@@ -32,13 +32,13 @@ export default defineConfig({
                 }
             }
           */
-        },
     },
-    video: false,
-    e2e: {
-        setupNodeEvents(on, config) {
-            qasePlugin(on, config);
-            qaseMetadata(on);
-        },
+  },
+  video: false,
+  e2e: {
+    setupNodeEvents(on, config) {
+      qasePlugin(on, config);
+      qaseMetadata(on);
     },
+  },
 });

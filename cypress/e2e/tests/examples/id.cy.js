@@ -1,4 +1,4 @@
-import { qase } from 'cypress-qase-reporter/mocha';
+import { qase } from "cypress-qase-reporter/mocha";
 
 /* Delete line, to uncomment 
 // Please, change the Ids in the following tests to valid ids from your Qase project.
@@ -25,4 +25,4 @@ describe('Example: id.cy.js', () => {
 
 });
 
-*/ // Delete line, to uncomment 
+*/ // Delete line, to uncomment

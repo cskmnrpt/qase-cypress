@@ -1,12 +1,15 @@
-import { qase } from 'cypress-qase-reporter/mocha';
+import { qase } from "cypress-qase-reporter/mocha";
 
-it("A test with qase.comment()", () => {
-
+describe("Example: comment.cy.js", () => {
+  it("A test with qase.comment()", () => {
     /*
      * Please note, this comment is added to a Result, not to the Test case.
      */
 
-  qase.comment("This comment will be displayed in the 'Actual Result' field of the test result in Qase.");
+    qase.comment(
+      "This comment will be displayed in the 'Actual Result' field of the test result in Qase.",
+    );
 
-  expect(true).to.equal(true);
+    expect(true).to.equal(true);
+  });
 });

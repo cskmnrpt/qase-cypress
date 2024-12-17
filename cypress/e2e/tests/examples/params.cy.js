@@ -9,7 +9,7 @@ const testCases = [
 describe("Example param.cy.js\tSingle Parameter", () => {
   testCases.forEach(({ browser }) => {
     it(`Test login with ${browser}`, () => {
-      qase.title("Verify if login page loads successfully");
+      qase.title("Verify if page loads on all browsers");
 
       /*
        * Instead of creating three separate test cases in Qase, this method will add a 'browser' parameter, with three values.

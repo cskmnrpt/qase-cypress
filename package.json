@@ -2,7 +2,7 @@
   "name": "qase-cypress",
   "version": "2.2.5",
   "description": "A demo repository with Examples, for troubleshooting problems and for feature requests.",
-  "main": "cypress.config.js",
+  "main": "",
   "type": "module",
   "directories": {
     "test": "cypress/e2e/tests"
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/cskmnrpt/qase-cypress.git"
   },
   "keywords": [
-    "qase-playwright",
+    "qase-cypress",
     "qaseio",
     "qase-tms",
     "qase-javascript"

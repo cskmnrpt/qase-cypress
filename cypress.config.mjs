@@ -21,7 +21,7 @@ export default defineConfig({
               run: {
               //  id: 1,
                 title: "Your test run title",
-                description: "Automated Test run by Playwright",
+                description: "Cypress Automated Test run",
                 complete: true,
               },
               environment: 'prod',
@@ -34,7 +34,8 @@ export default defineConfig({
           */
     },
   },
-  video: false,
+  video: true,
+  screenshotOnRunFailure: true,
   e2e: {
     setupNodeEvents(on, config) {
       qasePlugin(on, config);

@@ -3,6 +3,7 @@ import qasePlugin from "cypress-qase-reporter/plugin";
 import qaseMetadata from "cypress-qase-reporter/metadata";
 
 export default defineConfig({
+  projectId: "pz26uw",
   reporter: "cypress-multi-reporters",
   reporterOptions: {
     reporterEnabled: "cypress-qase-reporter",

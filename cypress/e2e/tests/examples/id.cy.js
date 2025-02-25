@@ -18,7 +18,7 @@ describe('Example: id.cy.js', () => {
   );
 
   qase(4,
-    it.skip('This test case will be skipped', () => {
+    it.skip('This test result will show up as "skipped" in Qase test run', () => {
       expect(true).to.equal(true);
     })
   );

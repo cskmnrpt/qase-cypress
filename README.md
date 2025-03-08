@@ -8,11 +8,15 @@ You can manually provide the run id in the reporter's config options, or use a p
 
 You may also use this GitHub action in your workflow to create a test run. 
 
+<br>
+
 To use `cypress-parallel` in a project with `qase-cypress` reporters, follow these steps:
 
 1. Add a `config.json` file specifying the configuration for `cypress-multi-reporters`. The config should include the test run ID and [run complete option should be disabled](https://github.com/cskmnrpt/qase-cypress/blob/eed2b67077f37beda6577002f089d3cf8a747381/config.json#L14).
 2. Remove all code related to the reporter from cypress.config.js.
 3. Add a script to `package.json` for running tests in parallel mode with the specified config:
+
+<br>
 
 ```json
   "scripts": {

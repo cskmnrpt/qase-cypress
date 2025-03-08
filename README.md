@@ -24,4 +24,4 @@ This is an example repository with tests in the `tests/examples/` directory. To 
 
 ### Misc
 
-1. How to use `cypress-parallel` library with `qase-cypress`? [Read more here](https://github.com/cskmnrpt/qase-cypress/tree/cypress-parallel)
+1. How to use [cypress-parallel](https://www.npmjs.com/package/cypress-parallel) library with `qase-cypress`? [Read more here](https://github.com/cskmnrpt/qase-cypress/tree/cypress-parallel)

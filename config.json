@@ -10,6 +10,7 @@
       "project": "<project-code>",
       "uploadAttachments": true,
       "run": {
+        "id": <id>,
         "complete": false
       }
     },

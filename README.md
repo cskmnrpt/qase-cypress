@@ -1,5 +1,14 @@
 # qase-cypress
 
+1. [Syntax Examples](#syntax-examples)
+2. [Frequently Asked Questions](#frequently-asked-questions)
+3. [Miscellaneous](#misc)
+
+
+---
+
+### Syntax Examples
+
 This is an example repository with tests in the `tests/examples/` directory. To run the tests :
 
 1. Clone the repository with `git clone https://github.com/cskmnrpt/qase-cypress.git`.
@@ -10,3 +19,9 @@ This is an example repository with tests in the `tests/examples/` directory. To 
 3. Create a `qase.config.json` in the root of the repository, and add your token, and project code.
 
 4. Run `npm test`.
+
+---
+
+### Misc
+
+1. How to use `cypress-parallel` library with `qase-cypress`? [Read more here](https://github.com/cskmnrpt/qase-cypress/tree/cypress-parallel)

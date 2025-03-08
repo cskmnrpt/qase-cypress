@@ -1,0 +1,22 @@
+{
+  "reporterEnabled": "cypress-qase-reporter",
+  "cypressQaseReporterReporterOptions": {
+    "mode": "testops",
+    "debug": true,
+    "testops": {
+      "api": {
+        "token": "<token>"
+      },
+      "project": "<project-code>",
+      "uploadAttachments": true,
+      "run": {
+        "complete": false
+      }
+    },
+    "framework": {
+      "cypress": {
+        "screenshotsFolder": "cypress/screenshots"
+      }
+    }
+  }
+}

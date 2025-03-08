@@ -1,0 +1,210 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 3,
+    "pending": 1,
+    "failures": 0,
+    "start": "2024-05-28T09:52:07.867Z",
+    "end": "2024-05-28T09:52:15.031Z",
+    "duration": 7164,
+    "testsRegistered": 5,
+    "passPercent": 75,
+    "pendingPercent": 20,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3b4656b8-c54f-4eac-9334-ff4e9c1c115b",
+      "title": "",
+      "fullFile": "cypress/e2e/second.cy.js",
+      "file": "cypress/e2e/second.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "886f89ad-febf-449f-81c1-c9b9f52d325f",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "clicking \"type\" navigates to a new url (Qase ID: 1)",
+              "fullTitle": "My First Test clicking \"type\" navigates to a new url (Qase ID: 1)",
+              "timedOut": null,
+              "duration": 677,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('type').click();\n// Should be on a new URL which includes '/commands/actions'\ncy.url().should('include', '/commands/actions');",
+              "err": {},
+              "uuid": "924825a0-bb3e-42af-9bbd-c7b00a2b460b",
+              "parentUUID": "886f89ad-febf-449f-81c1-c9b9f52d325f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Gets, types and asserts (Qase ID: 2)",
+              "fullTitle": "My First Test Gets, types and asserts (Qase ID: 2)",
+              "timedOut": null,
+              "duration": 4958,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('type').click();\n// Should be on a new URL which includes '/commands/actions'\ncy.url().should('include', '/commands/actions');\n// Get an input, type into it and verify that the value has been updated\ncy.get('.action-email').type('fake@email.com');\ncy.get('.action-email').should('have.value', 'unexpected@email.com');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#email1.form-control.action-email>' to have value 'unexpected@email.com', but the value was 'fake@email.com'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#email1.form-control.action-email>' to have value 'unexpected@email.com', but the value was 'fake@email.com'\n    at Context.eval (webpack://examples-cypress/./cypress/e2e/second.cy.js:22:28)",
+                "diff": "- 'fake@email.com'\n+ 'unexpected@email.com'\n"
+              },
+              "uuid": "5a6ee5a3-d5db-4c94-85bd-5ff03c388c4b",
+              "parentUUID": "886f89ad-febf-449f-81c1-c9b9f52d325f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Gets, types and asserts (Qase ID: 3)",
+              "fullTitle": "My First Test Gets, types and asserts (Qase ID: 3)",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('type').click();\n// Should be on a new URL which includes '/commands/actions'\ncy.url().should('include', '/commands/actions');\n// Get an input, type into it and verify that the value has been updated\ncy.get('.action-email').type('fake@email.com');\ncy.get('.action-email').should('have.value', 'unexpected@email.com');",
+              "err": {},
+              "uuid": "5f9088a8-347a-4e57-af37-103230955db8",
+              "parentUUID": "886f89ad-febf-449f-81c1-c9b9f52d325f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to utilities",
+              "fullTitle": "My First Test Go to utilities",
+              "timedOut": null,
+              "duration": 302,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('Utilities').click();\n// Should be on a new URL which includes 'utilities'\ncy.url().should('include', 'utilities');",
+              "err": {},
+              "uuid": "0dc5a90d-a1ec-4a89-89be-59247f77496d",
+              "parentUUID": "886f89ad-febf-449f-81c1-c9b9f52d325f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "c3fdee8b-d635-4eaa-b099-63ae8aadc1e8",
+              "title": "Test Suite - Level 2",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Go to Cypress API",
+                  "fullTitle": "My First Test Test Suite - Level 2 Go to Cypress API",
+                  "timedOut": null,
+                  "duration": 299,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('https://example.cypress.io');\ncy.contains('Cypress API').click();\n// Should be on a new URL which includes 'utilities'\ncy.url().should('include', 'cypress-api');",
+                  "err": {},
+                  "uuid": "71c2bc44-9df3-464e-924b-385b25149e30",
+                  "parentUUID": "c3fdee8b-d635-4eaa-b099-63ae8aadc1e8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "71c2bc44-9df3-464e-924b-385b25149e30"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 299,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "924825a0-bb3e-42af-9bbd-c7b00a2b460b",
+            "0dc5a90d-a1ec-4a89-89be-59247f77496d"
+          ],
+          "failures": [
+            "5a6ee5a3-d5db-4c94-85bd-5ff03c388c4b"
+          ],
+          "pending": [
+            "5f9088a8-347a-4e57-af37-103230955db8"
+          ],
+          "skipped": [],
+          "duration": 5937,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

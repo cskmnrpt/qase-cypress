@@ -1,12 +1,20 @@
-# qase-cypress
+# Cypress with cypress-parallel
 
-This is an example repository with tests in the `tests/examples/` directory. To run the tests :
+This is a simple example of how to run Cypress tests in parallel
+using [cypress-parallel](https://www.npmjs.com/package/cypress-parallel)
 
-1. Clone the repository with `git clone https://github.com/cskmnrpt/qase-cypress.git`.
-   To clone a different branch, other than `main`, use this command - `git clone --single-branch --branch <branch-name> https://github.com/cskmnrpt/qase-cypress.git`
+The reporter will work with this library only if it uploads results to an existing test run.
 
-2. Run `npm install` from the root of this repository to install dependencies.
+What needs to be done:
 
-3. Create a `qase.config.json` in the root of the repository, and add your token, and project code.
+1. Add a config.json file specifying the configuration for cypress-multi-reporters. The config should include the test
+   run ID and have automatic test run completion disabled.
+2. Remove all code related to the reporter from cypress.config.js.
+3. Add a script to package.json for running tests in parallel mode with the specified config:
 
-4. Run `npm test`.
+```json
+  "scripts": {
+"cy:run": "cypress run",
+"cy:parallel": "cypress-parallel -s cy:run -t 4 -v -p ./config.json -d cypress/e2e"
+},
+```

@@ -1,35 +1,29 @@
 {
-  "name": "qase-cypress",
-  "version": "2.2.5",
-  "description": "A demo repository with Examples, for troubleshooting problems and for feature requests.",
-  "main": "",
-  "type": "module",
-  "directories": {
-    "test": "cypress/e2e/tests"
-  },
+  "name": "cypress-example",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "test": "QASE_MODE=testops npx cypress run --spec cypress/e2e/tests/examples"
+    "cy:run": "cypress run",
+    "cy:parallel": "cypress-parallel -s cy:run -t 4 -v -p ./config.json -d cypress/e2e"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cskmnrpt/qase-cypress.git"
-  },
-  "keywords": [
-    "qase-cypress",
-    "qaseio",
-    "qase-tms",
-    "qase-javascript"
-  ],
-  "author": "Qase Support",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/cskmnrpt/qase-cypress/issues"
-  },
-  "homepage": "https://github.com/cskmnrpt/qase-cypress#readme",
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "cypress": "^13.16.1",
-    "cypress-multi-reporters": "^2.0.4",
-    "cypress-qase-reporter": "^2.2.5",
-    "prettier": "^3.4.2"
+    "browser": "^0.2.6",
+    "cy-verify-downloads": "^0.1.17",
+    "cypress": "^13.17.0",
+    "cypress-delete-downloads-folder": "^0.0.6",
+    "cypress-localstorage-commands": "^1.6.1",
+    "cypress-mailosaur": "^2.5.1",
+    "cypress-multi-reporters": "^1.6.4",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-promise": "^1.1.0",
+    "cypress-qase-reporter": "2.2.8"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.14.0",
+    "qase-javascript-commons": "^2.2.13",
+    "twilio": "^5.2.2"
   }
 }
